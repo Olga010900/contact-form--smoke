@@ -1,0 +1,170 @@
+body {
+  padding-top: 1rem;
+  background-color: black;
+  overflow: hidden;
+  margin: 0; }
+  @media (max-height: 580px) {
+    body {
+      overflow-y: scroll; } }
+  body .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 95vh; }
+    body .contact .img-background {
+      position: absolute;
+      background-position: center center;
+      z-index: -1;
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+      background-size: cover;
+      width: 100%;
+      height: 100vh; }
+    body .contact__panel {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: auto;
+      width: 58rem;
+      height: 35rem;
+      background: black;
+      border: 1px solid #989898; }
+      body .contact__panel--left {
+        width: 50%;
+        height: 35rem; }
+      body .contact__panel--right {
+        width: 50%;
+        height: 35rem; }
+        body .contact__panel--right h2 {
+          font-family: "Roboto Condensed", sans-serif;
+          font-size: 2.2rem;
+          color: #61a38b;
+          text-align: center; }
+        body .contact__panel--right h3 {
+          font-family: "Roboto Condensed", sans-serif;
+          font-size: 1rem;
+          margin-top: 25px;
+          color: rgba(205, 205, 205, 0.8);
+          margin-left: 4rem; }
+        body .contact__panel--right input {
+          font-size: 1rem;
+          padding-left: 1rem;
+          display: block;
+          font-family: "Roboto Condensed", sans-serif;
+          margin: 0 auto;
+          background: transparent;
+          border: 2px solid rgba(155, 155, 155, 0.8);
+          border-radius: 20px;
+          width: 20rem;
+          height: 1.8rem;
+          color: white;
+          -webkit-transition: border-color 0.5s ease-out;
+          -o-transition: border-color 0.5s ease-out;
+          transition: border-color 0.5s ease-out; }
+        body .contact__panel--right input:focus {
+          border: 2px solid #61a38b; }
+        body .contact__panel--right textarea {
+          width: 21rem;
+          height: 6rem;
+          padding: 8px 14px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          border: 2px solid rgba(155, 155, 155, 0.8);
+          font-family: "Roboto Condensed", sans-serif;
+          border-radius: 20px;
+          background-color: transparent;
+          font-size: 1rem;
+          resize: none;
+          margin-left: 4rem;
+          color: white;
+          -webkit-transition: border-color 0.5s ease-out;
+          -o-transition: border-color 0.5s ease-out;
+          transition: border-color 0.5s ease-out; }
+        body .contact__panel--right textarea:focus {
+          border: 2px solid #61a38b; }
+        body .contact__panel--right button {
+          font-family: "Roboto Condensed", sans-serif;
+          width: 13rem;
+          height: 2.2rem;
+          display: block;
+          margin: 3.3rem auto 0 auto;
+          border-radius: 20px;
+          border: none;
+          background: #38715b;
+          color: #cecece;
+          font-size: 18px;
+          font-weight: bold; }
+        body .contact__panel--right button:hover {
+          -webkit-transition: 0.7s;
+          -o-transition: 0.7s;
+          transition: 0.7s;
+          background: #285249; }
+        body .contact__panel--right span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          -webkit-transition: 0.5s;
+          -o-transition: 0.5s;
+          transition: 0.5s; }
+        body .contact__panel--right span:after {
+          content: "\00bb";
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          -webkit-transition: 0.5s;
+          -o-transition: 0.5s;
+          transition: 0.5s; }
+        body .contact__panel--right button:hover {
+          background-color: #285249;
+          -webkit-transition: 0.8s;
+          -o-transition: 0.8s;
+          transition: 0.8s;
+          cursor: pointer; }
+          body .contact__panel--right button:hover span {
+            padding-right: 25px; }
+          body .contact__panel--right button:hover span:after {
+            opacity: 1;
+            right: 0; }
+    body .contact__panel--image {
+      max-width: 100%;
+      height: 35rem; }
+    @media (max-width: 942px) {
+      body .contact__panel {
+        width: 30rem; }
+      body .contact__panel--left {
+        width: 0%; }
+      body .contact__panel--right {
+        background-image: url("../../assets/smoke.jpg");
+        height: 35rem;
+        max-width: 100%;
+        width: 100%; }
+        body .contact__panel--right input {
+          width: 16rem; }
+        body .contact__panel--right h3 {
+          text-align: center;
+          margin-left: 0; }
+        body .contact__panel--right textarea {
+          display: block;
+          margin: 0 auto;
+          width: 17rem; } }
+    @media (max-width: 495px) {
+      body .contact__panel {
+        width: 20rem; }
+      body .contact input {
+        width: 14rem; }
+      body .contact textarea {
+        display: block;
+        margin: 0 auto;
+        width: 15rem; }
+      body .contact button {
+        width: 12rem; } }
